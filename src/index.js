@@ -1,24 +1,32 @@
 import React from "react";
+import { ZksyncEra } from "@thirdweb-dev/chains";
 import { createRoot } from "react-dom/client";
-import App from "./App";
+import AppBase from "./AppBase";
+import AppZKSynk from "./AppZKSynk";
 import reportWebVitals from "./reportWebVitals";
-import { ThirdwebProvider } from "@thirdweb-dev/react";
+import { ThirdwebProvider, useContract } from "@thirdweb-dev/react";
 import "./styles/globals.css";
 
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
 // You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
-const activeChain = "ethereum";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <ThirdwebProvider
-      activeChain={activeChain}
+      activeChain={"base"}
       clientId={process.env.REACT_APP_TEMPLATE_CLIENT_ID}
     >
-      <App />
+      <AppBase />
+    </ThirdwebProvider>
+
+    <ThirdwebProvider
+      activeChain={ ZksyncEra }
+      clientId={process.env.REACT_APP_TEMPLATE_CLIENT_ID}
+    >
+      <AppZKSynk />
     </ThirdwebProvider>
   </React.StrictMode>
 );
