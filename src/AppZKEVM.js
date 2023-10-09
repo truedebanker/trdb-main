@@ -1,38 +1,36 @@
 import { Web3Button } from "@thirdweb-dev/react";
-import { lightTheme } from "@thirdweb-dev/react";
 import "./styles/Home.css";
-import BaseLogo from "./images/base-logo.png"
+import zkEVMLogo from "./images/zkevm-logo.png"
 
 export default function Home() {
   return (
     <main className="main">
 
       <div className="wrapper">
-
         <div className="collections">
           <div className="divider"></div>
           <div className="collection-name">
 
-          <h3>1.</h3>
+          <h3>5.</h3>
           
                 <div className="chain-logo">
-                  <img src={BaseLogo} alt="baselogo" />
+                  <img src={zkEVMLogo} alt="zkevmlogo" />
                 </div>
              
-            <h3>TRDB Base</h3>
+            <h3>TRDB Polygon zkEVM</h3>
           </div>
           
           <div className="col-items">
             <div className="col-item">
               <div className="nft-img">
-                <img src="/images/TRDB-Base-1.gif"></img>
+                <img src="/images/TRDB-ZKEVM-1.gif"></img>
               </div>
               <div className="item-info">
-                <div className="item-title"><p>Base Beggar</p><p>$Free</p></div>
+                <div className="item-title"><p>zkEVM Beggar</p><p>$Free</p></div>
                 <div className="mint-nft">
                   <Web3Button
                   theme={"light"}
-                  contractAddress={"0x65f8aEEa6fCD2Cbd29DBE0A0F5e8603C63CbA9C6"}
+                  contractAddress={"0x117f2a838275a1Fe8b4604c20D192E2AF3165561"}
                   action={(contract) => contract.erc721.claim(1)}
                   onSuccess={() => alert("NFT Minted Successfully!")}
                   onError={(err) => alert(err)}
@@ -46,14 +44,14 @@ export default function Home() {
 
             <div className="col-item">
               <div className="nft-img">
-                <img src="/images/TRDB-Base-2.gif"></img>
+                <img src="/images/TRDB-ZKEVM-2.gif"></img>
               </div>
               <div className="item-info">
-                <div className="item-title"><p>Base Peasant</p><p>$0.01</p></div>
+                <div className="item-title"><p>zkEVM Peasant</p><p>$0.01</p></div>
                 <div className="mint-nft">
                   <Web3Button
                   theme={"light"}
-                  contractAddress={"0xA6457C0F311f243e690d235Df2Db092e081d522C"}
+                  contractAddress={"0xc891F6a872b35D5E413084AE79680E954A474C08"}
                   action={(contract) => contract.erc721.claim(1)}
                   onSuccess={() => alert("NFT Minted Successfully!")}
                   onError={(err) => alert(err)}
@@ -67,14 +65,14 @@ export default function Home() {
 
             <div className="col-item">
               <div className="nft-img">
-                <img src="/images/TRDB-Base-3.gif"></img>
+                <img src="/images/TRDB-ZKEVM-3.gif"></img>
               </div>
               <div className="item-info">
-                <div className="item-title"><p>Base Noble</p><p>$0.1</p></div>
+                <div className="item-title"><p>zkEVM Noble</p><p>$0.1</p></div>
                 <div className="mint-nft">
                   <Web3Button
                   theme={"light"}
-                  contractAddress={"0x389b6F223AD37c861ed3e0B65bDE97b37eb411e5"}
+                  contractAddress={"0xE2B3D73952F879298a648394006C270Aaa961A03"}
                   action={(contract) => contract.erc721.claim(1)}
                   onSuccess={() => alert("NFT Minted Successfully!")}
                   onError={(err) => alert(err)}
@@ -88,14 +86,14 @@ export default function Home() {
 
             <div className="col-item">
               <div className="nft-img">
-                <img src="/images/TRDB-Base-4.gif"></img>
+                <img src="/images/TRDB-ZKEVM-4.gif"></img>
               </div>
               <div className="item-info">
-                <div className="item-title"><p>Base Aristocrat</p><p>$1</p></div>
+                <div className="item-title"><p>zkEVM Aristocrat</p><p>$1</p></div>
                 <div className="mint-nft">
                   <Web3Button
                   theme={"light"}
-                  contractAddress={"0xAfDbD6E1654931C8f13E2cf181002f9BbA39ac74"}
+                  contractAddress={"0x073AEfd375AC9EE3f14621750C585D8951095D1E"}
                   action={(contract) => contract.erc721.claim(1)}
                   onSuccess={() => alert("NFT Minted Successfully!")}
                   onError={(err) => alert(err)}
@@ -109,14 +107,14 @@ export default function Home() {
 
             <div className="col-item">
               <div className="nft-img">
-                <img src="/images/TRDB-Base-5.gif"></img>
+                <img src="/images/TRDB-ZKEVM-5.gif"></img>
               </div>
               <div className="item-info">
-                <div className="item-title"><p>Base Royal</p><p>$10</p></div>
+                <div className="item-title"><p>zkEVM Royal</p><p>$10</p></div>
                 <div className="mint-nft">
                   <Web3Button
                   theme={"light"}
-                  contractAddress={"0x49fABFBCb95C748EB7Ad3d80A255fe17c415C2F7"}
+                  contractAddress={"0x5eA11184A77EDcdbdcAAf77fa061F27423b971F1"}
                   action={(contract) => contract.erc721.claim(1)}
                   onSuccess={() => alert("NFT Minted Successfully!")}
                   onError={(err) => alert(err)}

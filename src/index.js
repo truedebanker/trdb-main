@@ -1,8 +1,16 @@
 import React from "react";
-import { ZksyncEra } from "@thirdweb-dev/chains";
+import { ZksyncEra, Zora, Linea, PolygonZkevm, Zetachain } from "@thirdweb-dev/chains";
+import { Mantle } from "@thirdweb-dev/chains";
 import { createRoot } from "react-dom/client";
+import AppHeader from "./AppHeader";
 import AppBase from "./AppBase";
-import AppZKSynk from "./AppZKSynk";
+/*import AppZKSynk from "./AppZKSynk";*/
+import AppMantle from "./AppMantle";
+import AppZora from "./AppZora";
+import AppLinea from "./AppLinea";
+import AppZKEVM from "./AppZKEVM";
+/*import AppZetachain from "./AppZetachain";*/
+import AppFooter from "./AppFooter";
 import reportWebVitals from "./reportWebVitals";
 import { ThirdwebProvider, useContract } from "@thirdweb-dev/react";
 import "./styles/globals.css";
@@ -15,6 +23,14 @@ const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
   <React.StrictMode>
+
+    <ThirdwebProvider
+      activeChain={"base"}
+      clientId={process.env.REACT_APP_TEMPLATE_CLIENT_ID}
+    >
+      <AppHeader />
+    </ThirdwebProvider>
+
     <ThirdwebProvider
       activeChain={"base"}
       clientId={process.env.REACT_APP_TEMPLATE_CLIENT_ID}
@@ -22,12 +38,50 @@ root.render(
       <AppBase />
     </ThirdwebProvider>
 
-    <ThirdwebProvider
+    {/*<ThirdwebProvider
       activeChain={ ZksyncEra }
       clientId={process.env.REACT_APP_TEMPLATE_CLIENT_ID}
     >
       <AppZKSynk />
+</ThirdwebProvider>*/}
+
+    <ThirdwebProvider
+      activeChain={ Mantle }
+      clientId={process.env.REACT_APP_TEMPLATE_CLIENT_ID}
+    >
+      <AppMantle />
     </ThirdwebProvider>
+
+    <ThirdwebProvider
+      activeChain={ Zora }
+      clientId={process.env.REACT_APP_TEMPLATE_CLIENT_ID}
+    >
+      <AppZora />
+    </ThirdwebProvider>
+
+    <ThirdwebProvider
+      activeChain={ Linea }
+      clientId={process.env.REACT_APP_TEMPLATE_CLIENT_ID}
+    >
+      <AppLinea />
+    </ThirdwebProvider>
+
+    <ThirdwebProvider
+      activeChain={ PolygonZkevm }
+      clientId={process.env.REACT_APP_TEMPLATE_CLIENT_ID}
+    >
+      <AppZKEVM />
+    </ThirdwebProvider>
+
+    {/*<ThirdwebProvider
+      activeChain={ Zetachain }
+      clientId={process.env.REACT_APP_TEMPLATE_CLIENT_ID}
+    >
+      <AppZetachain />
+    </ThirdwebProvider>*/}
+
+    <AppFooter />
+
   </React.StrictMode>
 );
 

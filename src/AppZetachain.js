@@ -1,34 +1,32 @@
 import { Web3Button } from "@thirdweb-dev/react";
-import { lightTheme } from "@thirdweb-dev/react";
 import "./styles/Home.css";
-import BaseLogo from "./images/base-logo.png"
+import ZetachainLogo from "./images/zetachain-logo.png"
 
 export default function Home() {
   return (
     <main className="main">
 
       <div className="wrapper">
-
         <div className="collections">
           <div className="divider"></div>
           <div className="collection-name">
 
-          <h3>1.</h3>
+          <h3>7.</h3>
           
                 <div className="chain-logo">
-                  <img src={BaseLogo} alt="baselogo" />
+                  <img src={ZetachainLogo} alt="zetachainlogo" />
                 </div>
              
-            <h3>TRDB Base</h3>
+            <h3>TRDB Zetachain</h3>
           </div>
           
           <div className="col-items">
             <div className="col-item">
               <div className="nft-img">
-                <img src="/images/TRDB-Base-1.gif"></img>
+                <img src="/images/TRDB-ZetaChain-1.gif"></img>
               </div>
               <div className="item-info">
-                <div className="item-title"><p>Base Beggar</p><p>$Free</p></div>
+                <div className="item-title"><p>Zetachain Beggar</p><p>$Free</p></div>
                 <div className="mint-nft">
                   <Web3Button
                   theme={"light"}
@@ -46,10 +44,10 @@ export default function Home() {
 
             <div className="col-item">
               <div className="nft-img">
-                <img src="/images/TRDB-Base-2.gif"></img>
+                <img src="/images/TRDB-ZetaChain-2.gif"></img>
               </div>
               <div className="item-info">
-                <div className="item-title"><p>Base Peasant</p><p>$0.01</p></div>
+                <div className="item-title"><p>Zetachain Peasant</p><p>$0.01</p></div>
                 <div className="mint-nft">
                   <Web3Button
                   theme={"light"}
@@ -67,10 +65,10 @@ export default function Home() {
 
             <div className="col-item">
               <div className="nft-img">
-                <img src="/images/TRDB-Base-3.gif"></img>
+                <img src="/images/TRDB-ZetaChain-3.gif"></img>
               </div>
               <div className="item-info">
-                <div className="item-title"><p>Base Noble</p><p>$0.1</p></div>
+                <div className="item-title"><p>Zetachain Noble</p><p>$0.1</p></div>
                 <div className="mint-nft">
                   <Web3Button
                   theme={"light"}
@@ -88,10 +86,10 @@ export default function Home() {
 
             <div className="col-item">
               <div className="nft-img">
-                <img src="/images/TRDB-Base-4.gif"></img>
+                <img src="/images/TRDB-ZetaChain-4.gif"></img>
               </div>
               <div className="item-info">
-                <div className="item-title"><p>Base Aristocrat</p><p>$1</p></div>
+                <div className="item-title"><p>Zetachain Aristocrat</p><p>$1</p></div>
                 <div className="mint-nft">
                   <Web3Button
                   theme={"light"}
@@ -109,10 +107,10 @@ export default function Home() {
 
             <div className="col-item">
               <div className="nft-img">
-                <img src="/images/TRDB-Base-5.gif"></img>
+                <img src="/images/TRDB-ZetaChain-5.gif"></img>
               </div>
               <div className="item-info">
-                <div className="item-title"><p>Base Royal</p><p>$10</p></div>
+                <div className="item-title"><p>Zetachain Royal</p><p>$10</p></div>
                 <div className="mint-nft">
                   <Web3Button
                   theme={"light"}
