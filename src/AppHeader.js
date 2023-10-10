@@ -24,7 +24,7 @@ export default function Home() {
 
         <div className="welcome">
 
-          <div className="title"><h1>Welcome True DeBankers</h1></div>
+          <div className="title"><h1>Welcome 👋 🤖 True DeBankers!</h1></div>
           <div className="text">Unlock cost-effective EVM transactions for potential airdrops through NFTs. Engage with Web3 marketplaces to enhance your rewards. Join us today for a chance at exclusive 1/1 NFTs and more!</div>
 
         </div>
